@@ -1,0 +1,24 @@
+version: "3"
+services:
+  thelounge:
+    image: thelounge/thelounge:latest
+    volumes:
+      - ~/.thelounge:/var/opt/thelounge
+    restart: on-failure
+    expose:
+      - 9000
+    labels:
+      - traefik.frontend.rule=Host:irc.example.xyz
+      - traefik.enable=true
+  traefik:
+    restart: unless-stopped
+    image: traefik:v1.7.16
+    read_only: true
+    command:  --web
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./acme.json:/acme.json
+      - ./traefik.toml:/traefik.toml
