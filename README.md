@@ -17,7 +17,7 @@ $ cd thelounge-traefik
 $ touch acme.json && chmod 600 acme.json
 ```
 
-In `docker-compose.yml` replace `irc.example.xyz` by your desired domain.
+In `docker-compose.yml` and `traefik.toml` replace `irc.example.xyz` by your desired domain.
 
 ```Shell
 $ docker-compose up -d
