@@ -8,7 +8,7 @@
 
 Clone the repo
 ```Shell
-$ git clone git@github.com:pierre-emmanuelJ/thelounge-traefik.git
+$ git clone https://github.com/pierre-emmanuelJ/thelounge-traefik.git
 ```
 ```Shell
 $ cd thelounge-traefik
