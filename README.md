@@ -42,6 +42,6 @@ Then you can access to your web IRC client on `irc.example.xyz`
 
 For the rest of the lounge functionalities see [thelounge doc](https://thelounge.chat/docs/)
 
-### FINISH
+
 
 ## Enjoy
